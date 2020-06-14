@@ -7,11 +7,19 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import axios from 'axios'
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  mounted(){
+      axios.get('/').then(
+          res=>{
+              console.log(res);
+              
+          }
+      )
   }
 }
 </script>
