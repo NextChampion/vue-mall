@@ -1,18 +1,18 @@
 <!--
  * @Author: zhangcunxia
  * @Email: zcx4150@gmail.com
- * @Date: 2020-06-14 21:14:37
- * @LastEditTime: 2020-06-21 11:54:15
+ * @Date: 2020-06-14 21:15:33
+ * @LastEditTime: 2020-06-15 01:05:05
  * @LastEditors: zhangcunxia
  * @Description: 
 --> 
 <template>
     <div>
-        orderlist
+        order-confirm
     </div>
 </template>
 <script>
 export default {
-    name: 'nav-orderlist',
+    name: 'nav-order-confirm',
 }
 </script>
