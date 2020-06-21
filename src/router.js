@@ -2,7 +2,7 @@
  * @Author: zhangcunxia
  * @Email: zcx4150@gmail.com
  * @Date: 2020-06-14 21:10:26
- * @LastEditTime: 2020-06-15 01:01:28
+ * @LastEditTime: 2020-06-21 12:25:16
  * @LastEditors: zhangcunxia
  * @Description: 
  */ 
@@ -17,6 +17,7 @@ import Order from './page/order';
 import OrderList from './page/orderList';
 import OrderPay from './page/orderPay';
 import OrderConfirm from './page/orderConfirm';
+import Alipay from './page/alipay'
 
 Vue.use(Router);
 
@@ -29,21 +30,21 @@ export default new Router({
             redirect: '/index',
             children: [
                 {
-                    path: '/index',
+                    path: 'index',
                     name: 'index',
                     component: Index, 
                 },
                 {
-                    path: '/product/:id',
+                    path: 'product/:id',
                     name: 'product',
                     component: Product, 
                 },
                 {
-                    path: '/detail/:id',
+                    path: 'detail/:id',
                     name: 'detail',
                     component: Detail, 
-                }
-            ]
+                },
+            ],
         },
         {
             path: '/cart',
@@ -56,19 +57,24 @@ export default new Router({
             component: Order,
             children: [
                 {
-                    path: '/confirm',
+                    path: 'confirm',
                     name: 'order-confirm',
                     component: OrderConfirm,
                 },
                 {
-                    path: '/pay',
+                    path: 'pay',
                     name: 'order-pay',
                     component: OrderPay,
                 },
                 {
-                    path: '/list',
+                    path: 'list',
                     name: 'order-list',
                     component: OrderList,
+                },
+                {
+                    path: 'alipay',
+                    name: 'alipay',
+                    component: Alipay,
                 },
             ]
         },

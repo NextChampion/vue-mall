@@ -1,18 +1,18 @@
 <!--
  * @Author: zhangcunxia
  * @Email: zcx4150@gmail.com
- * @Date: 2020-06-14 21:14:03
- * @LastEditTime: 2020-06-21 12:17:10
+ * @Date: 2020-06-21 12:18:24
+ * @LastEditTime: 2020-06-21 12:18:45
  * @LastEditors: zhangcunxia
  * @Description: 
 --> 
 <template>
-    <div>
-        product
-    </div>
+<div>
+    order-header
+</div>
 </template>
 <script>
 export default {
-    name: 'nav-product',
+    name: 'order-header',
 }
 </script>

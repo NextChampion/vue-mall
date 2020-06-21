@@ -2,7 +2,7 @@
  * @Author: zhangcunxia
  * @Email: zcx4150@gmail.com
  * @Date: 2020-06-14 21:11:58
- * @LastEditTime: 2020-06-21 11:52:50
+ * @LastEditTime: 2020-06-21 12:09:29
  * @LastEditors: zhangcunxia
  * @Description: 
 --> 
@@ -19,8 +19,8 @@ import NavFooter from './../components/NavFooter';
 export default {
     name: 'nav-home',
     components: {
-        'nav-header':NavHeader,
-        'nav-footer': NavFooter,
+        NavHeader,
+        NavFooter,
     }
 }
 </script>
